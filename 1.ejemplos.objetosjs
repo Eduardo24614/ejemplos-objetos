@@ -1,0 +1,37 @@
+let nameu = "jhon";
+let age = 25;
+let isEnrolled = true;
+let subjetcs = ["programacion","base de datos","IA"];
+
+//acceder a la informacion
+console.log(typeof(nameu));
+console.log(typeof(age));
+console.log(typeof(isEnrolled));
+console.log(typeof(subjetcs));
+
+console.log(Array.isArray(subjetcs));
+
+console.log(subjetcs.map(function(s){return typeof(s)}));
+
+subjetcs.forEach(function (elements){
+    console.log(elements);
+})
+
+
+let estudiante ={
+    "nombre":"jhon M",
+    "age": 25,
+    "IsEnrolled": true,
+    "materias": ["programacion", "base de datos", "IA"]
+}
+
+console.log(typeof(estudiante));
+
+//accdemos a los datos especificos del objeto
+console.log("el nombre del estudiante es:", estudiante.name);
+
+console.log("el nombre del estudiante es:", estudiante.name);
+console.log("la edad del estudiante es:", estudiante.age);
+console.log("esta inscrito?:", estudiante.IsEnrolled);
+console.log("la primera materia es:", estudainte.materia[0]);
+console.log("la cantidad de materias:", estudiante.materias.length);
